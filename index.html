@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画板</title>
+    <link rel="stylesheet" type="text/css" href="./css.css">
+</head>
+<body>
+    <div class="con">
+
+<!--工具栏-->
+        <div class="tools" id="tools">
+            <a id="star" href="#"></a>
+            <a id="dottedRect" href="#"></a>
+            <a id="eraser" href="#"></a>
+            <a id="fill" href="#"></a>
+            <a id="pen" href="#"></a>
+            <a id="magnifer" href="#"></a>
+            <a id="pencil" href="#"></a>
+            <a id="brush" href="#"></a>
+            <a id="coloredPencil" href="#"></a>
+            <a id="text" href="#"></a>
+            <a id="line" href="#"></a>
+            <a id="waveLine" href="#"></a>
+            <a id="rect" href="#"></a>
+            <a id="t1" href="#"></a>
+            <a id="oval" href="#"></a>
+            <a id="t2" href="#"></a>
+        </div>
+
+<!--调节-->
+        <div class="streak" id="none">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+<!--画布-->
+        <div class="canvas" id="content">
+            <canvas id="canvas" width="830" height="450"></canvas>
+        </div>
+
+<!--色板-->
+        <div class="colorBoard">
+            <div class="choose" id="choose">
+                <div></div>
+                <div></div>
+            </div>
+            <div class="colors" id="colors">
+                <div id="white"><a href="#"></a></div>
+                <div id="gray"><a href="#"></a></div>
+                <div id="maroon"><a href="#"></a></div>
+                <div id="olive"><a href="#"></a></div>
+                <div id="darkgreen"><a href="#"></a></div>
+                <div id="teal"><a href="#"></a></div>
+                <div id="darkblue"><a href="#"></a></div>
+                <div id="purple"><a href="#"></a></div>
+                <div id="olivedrab"><a href="#"></a></div>
+                <div id="darkslategray"><a href="#"></a></div>
+                <div id="royalblue"><a href="#"></a></div>
+                <div id="steelblue"><a href="#"></a></div>
+                <div id="mediumblue"><a href="#"></a></div>
+                <div id="saddlebrown"><a href="#"></a></div>
+                <div id="white"><a href="#"></a></div>
+                <div id="darkgray"><a href="#"></a></div>
+                <div id="orangered"><a href="#"></a></div>
+                <div id="yellow"><a href="#"></a></div>
+                <div id="lawngreen"><a href="#"></a></div>
+                <div id="aqua"><a href="#"></a></div>
+                <div id="blue"><a href="#"></a></div>
+                <div id="fuchsia"><a href="#"></a></div>
+                <div id="khaki"><a href="#"></a></div>
+                <div id="springgreen"><a href="#"></a></div>
+                <div id="turquoise"><a href="#"></a></div>
+                <div id="slateblue"><a href="#"></a></div>
+                <div id="lightcoral"><a href="#"></a></div>
+                <div id="peru"><a href="#"></a></div>
+            </div>
+        </div>
+
+<!--菜单栏-->
+        <div class="menu">
+            <ul id="menu">
+                <li>
+                    <a href="#">文件</a>
+                    <div>
+                        <div><a id="new" href="#">新建</a></div>
+                        <div><a class="file" href="#">打开<input type="file" id="file" /></a></div>
+                        <div><a id="save" href="" download="canvas">
+                            保存
+                            <img src="" alt="" id="img">
+                        </a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">编辑</a>
+                    <div>
+                        <div><a href="#">撤销</a></div>
+                        <div><a id="clear" href="#">清空</a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">视图</a>
+                    <div>
+                        <div><a href="#">工具栏</a></div>
+                        <div><a href="#">状态栏</a></div>
+                        <div><a href="#">画板</a></div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">帮助</a>
+                    <div>
+                        <div><a href="#">关于画板</a></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</body>
+<script type="text/javascript" src="./js.js"></script>
+</html>

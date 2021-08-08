@@ -1,0 +1,447 @@
+.con{
+    width: 1000px;
+    height: 600px;
+    background-color: #d2d2d2;
+    overflow: hidden;
+    position: relative;
+}
+
+/*菜单栏*/
+.menu{
+    height: 25px;
+    width: 200px;
+    overflow: hidden;
+}
+.menu a{
+    text-decoration: none;
+}
+.menu>ul{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.menu>ul>li{
+    float: left;
+}
+.menu ul,.menu li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.file{
+    position: relative;
+}
+#file{
+    position: absolute;
+    top: 0;
+    left: -10px;
+    opacity: 0;
+}
+.menu>ul>li>div{
+    width: 70px;
+    border-top: 1px solid rgb(160, 160, 160);
+    display: none;
+    overflow: hidden;
+}
+.menu>ul>li:nth-child(1)>div{
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 70px;
+    height: 75px;
+}
+.menu>ul>li:nth-child(2)>div{
+    position: absolute;
+    left: 50px;
+    top: 25px;
+    width: 70px;
+    height: 50px;
+}
+.menu>ul>li:nth-child(3)>div{
+    position: absolute;
+    left: 100px;
+    top: 25px;
+    width: 70px;
+    height: 75px;
+}
+.menu>ul>li:nth-child(4)>div{
+    position: absolute;
+    left: 150px;
+    top: 25px;
+    width: 70px;
+    height: 25px;
+}
+.menu>ul>li>div>div{
+    width: 70px;
+    border-bottom: 1px solid rgb(160, 160, 160);
+    border-left: 1px solid rgb(160, 160, 160);
+    border-right: 1px solid rgb(160, 160, 160);
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    background-color: rgb(210, 210, 210);
+}
+.menu>ul>li>div>div :first-child{
+    border-top: none;
+}
+.menu>ul>li>a{
+    color: black;
+    line-height: 25px;
+    width: 38px;
+    border: none;
+}
+.menu>ul>li>div>div>a{
+    color: black;
+    height: 25px;
+}
+#save{
+    position: relative;
+}
+#img{
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 50px;
+    height: 20px;
+    opacity: 0;
+}
+
+/*工具栏*/
+.tools,.tools>a{
+    display: inline-block;
+}
+.tools{
+    width: 65px;
+    height: 256px;
+    position: absolute;
+    left: 2px;
+    top: 26px;
+}
+.tools>a{
+    width: 30px;
+    height: 30px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    float: left;
+}
+#star{
+    background-image: url(./images/1.png);
+    background-position: 0 0;
+    background-size: 60px 221px;
+}
+#dottedRect{
+    background-image: url(./images/1.png);
+    background-position: -32px 0;
+    background-size: 60px 221px;
+}
+#eraser{
+    background-image: url(./images/1.png);
+    background-position: 0 -27px;
+    background-size: 60px 221px;
+}
+#fill{
+    background-image: url(./images/1.png);
+    background-position: -32px -27px;
+    background-size: 60px 221px;
+}
+#pen{
+    background-image: url(./images/1.png);
+    background-position: 0 -54px;
+    background-size: 60px 221px;
+}
+#magnifer{
+    background-image: url(./images/1.png);
+    background-position: -32px -54px;
+    background-size: 60px 221px;
+}
+#pencil{
+    background-image: url(./images/1.png);
+    background-position: 0 -81px;
+    background-size: 60px 221px;
+}
+#brush{
+    background-image: url(./images/1.png);
+    background-position: -32px -81px;
+    background-size: 60px 221px;
+}
+#coloredPencil{
+    background-image: url(./images/1.png);
+    background-position: 0 -108px;
+    background-size: 60px 221px;
+}
+#text{
+    background-image: url(./images/1.png);
+    background-position: -32px -108px;
+    background-size: 60px 221px;
+}
+#line{
+    background-image: url(./images/1.png);
+    background-position: 0 -137px;
+    background-size: 60px 221px;
+}
+#waveLine{
+    background-image: url(./images/1.png);
+    background-position: -32px -137px;
+    background-size: 60px 221px;
+}
+#rect{
+    background-image: url(./images/1.png);
+    background-position: 0 -165px;
+    background-size: 60px 221px;
+}
+#t1{
+    background-image: url(./images/1.png);
+    background-position: -32px -165px;
+    background-size: 60px 221px;
+}
+#oval{
+    background-image: url(./images/1.png);
+    background-position: 0 -192px;
+    background-size: 60px 221px;
+}
+#t2{
+    background-image:url(./images/1.png);
+    background-position: -32px -192px;
+    background-size: 60px 221px;
+}
+
+/*线条粗细*/
+.streak{
+    width:50px;
+    height: 100px;
+    border-top: solid 2px rgb(180, 180, 180);
+    border-left: solid 2px rgb(180, 180, 180);
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
+    position: absolute;
+    left: 7px;
+    top: 290px;
+}
+#dis div:nth-child(1){
+    width: 4px;
+    height: 4px;
+    border: solid #d2d2d2 5px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 19px;
+    top: 13px;
+}
+#dis div:nth-child(2){
+    width: 8px;
+    height: 8px;
+    border:solid rgb(160, 160, 160) 2px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    left: 19px;
+    top: 38px;
+}
+#dis div:nth-child(3){
+    width: 12px;
+    height: 12px;
+    border: solid rgb(160, 160, 160) 2px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 17px;
+}
+#streak div:nth-child(1){
+    width: 30px;
+    height: 2px;
+    background-color: black;
+    border-top: solid #d2d2d2 5px;
+    border-bottom: solid #d2d2d2 5px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+#streak div:nth-child(2){
+    width: 30px;
+    height: 5px;
+    background-color:  black;
+    border-top: solid #d2d2d2 5px;
+    border-bottom: solid #d2d2d2 5px;
+    position: absolute;
+    left: 10px;
+    top: 43px;
+}
+#streak div:nth-child(3){
+    width: 30px;
+    height: 8px;
+    background-color: black;
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+}
+
+/*画布*/
+.canvas{
+    display: inline-block;
+    width: 935px;
+    height: 500px;
+    background-color: rgb(160, 160, 160);
+    position: absolute;
+    left: 70px;
+    top: 25px;
+    box-shadow: 0 0 4px rgb(160, 160, 160);
+}
+#canvas{
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    background-color: white;
+}
+
+/*色板*/
+.colorBoard{
+    width: 340px;
+    height: 42px;
+    position: absolute;
+    left: 6px;
+    top: 540px;
+}
+.choose{
+    width: 35px;
+    height: 34px;
+    border-top: solid 1px black;
+    border-left: 1px solid black;
+    border-right: solid 2px white;
+    border-bottom: solid 1px white;
+    box-shadow: 0 -1px 2px;
+    background-color:rgb(210, 210, 210);
+}
+.choose>div{
+    border: 2px solid rgb(180, 180, 180);
+    width: 15px;
+    height: 15px;
+    box-shadow: 1px 1px 1px;
+}
+.choose>div:nth-child(1){
+    background-color: white;
+    position: absolute;
+    left: 13px;
+    top: 11px;
+}
+.choose>div:nth-child(2){
+    background-color: black;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+.colors{
+    position: absolute;
+    left: 41px;
+    top: 0;
+    width: 290px;
+    height: 42px;
+    font-size: 0;
+}
+.colors>div{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    border-top: solid 1px black;
+    border-left: 2px solid black;
+    border-right: solid 2.5px white;
+    border-bottom: solid 1px white;
+    box-shadow: -1px -1px 2px;
+}
+.colors>div:nth-child(14),.colors>div:nth-child(28){
+    border-right: 1.5px solid white;
+}
+.colors>div:nth-child(n-14){
+    border-bottom: solid 2.7px white;
+}
+.colors>div:nth-child(n+15){
+    border-bottom: solid 1.7px white;
+}
+.colors>div:nth-child(1){
+    background-color: black;
+}
+.colors>div:nth-child(15){
+    background-color: white;
+}
+.colors>div:nth-child(2){
+    background-color: gray;
+}
+.colors>div:nth-child(16){
+    background-color: darkgray;
+}
+.colors>div:nth-child(3){
+    background-color: maroon;
+}
+.colors>div:nth-child(17){
+    background-color: orangered;
+}
+.colors>div:nth-child(4){
+    background-color: olive;
+}
+.colors>div:nth-child(18){
+    background-color: yellow;
+}
+.colors>div:nth-child(5){
+    background-color: darkgreen;
+}
+.colors>div:nth-child(19){
+    background-color: lawngreen;
+}
+.colors>div:nth-child(6){
+    background-color: teal;
+}
+.colors>div:nth-child(20){
+    background-color: aqua;
+}
+.colors>div:nth-child(7){
+    background-color: darkblue;
+}
+.colors>div:nth-child(21){
+    background-color: blue;
+}
+.colors>div:nth-child(8){
+    background-color: purple
+}
+.colors>div:nth-child(22){
+    background-color: fuchsia;
+}
+.colors>div:nth-child(9){
+    background-color: olivedrab;
+}
+.colors>div:nth-child(23){
+    background-color: khaki;
+}
+.colors>div:nth-child(10){
+    background-color: darkslategray;
+}
+.colors>div:nth-child(24){
+    background-color: springgreen;
+}
+.colors>div:nth-child(11){
+    background-color: royalblue;
+}
+.colors>div:nth-child(25){
+    background-color: turquoise;
+}
+.colors>div:nth-child(12){
+    background-color: steelblue;
+}
+.colors>div:nth-child(26){
+    background-color: slateblue;
+}
+.colors>div:nth-child(13){
+    background-color: mediumblue;
+}
+.colors>div:nth-child(27){
+    background-color: lightcoral;
+}
+.colors>div:nth-child(14){
+    background-color: saddlebrown;
+}
+.colors>div:nth-child(28){
+    background-color: peru;
+}
